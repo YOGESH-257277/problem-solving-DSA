@@ -2,6 +2,7 @@
 // 1. Plan to get the reverse of the number using arithmetic operations. 
 // 2. Compare the generated number with the input number.   
 
+
 class Solution {
     public boolean isPalindrome(int x) {
         int num = x;
@@ -14,7 +15,6 @@ class Solution {
         return (rev==x);
     }
 }
-
 
 
 // Time Complexity    = O(d)  where d is the digits in x; O(log x)   
