@@ -1,0 +1,46 @@
+//*********** Solution Thinking Idea ************
+// 1. Intialise new List having single node as -1 or any non null value. 
+// 2. Take a pointer which will point to that head of the newly created List.
+// 3. traverse both the list1 and list2 until null, compares their values with the each other node value
+    and increment the pointer to the next node,
+    3.1 point the dummy next pointer to that list and move list to the next node.
+    3.2 same for other case. 
+    3.3 move ll pointers as well after both conditions.
+// 4. if loop ends means one of the list remains, then point the ll point to the remaining of the non empty list.
+// 5. return dummy.next, which is next of the ListNode we taken initially.    
+
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode dummy = new ListNode(-1);
+        ListNode ll = dummy;
+        while(list1 != null && list2 !=null){
+            if(list1.val <= list2.val){
+                ll.next = list1;
+                list1 = list1.next;
+            }
+            else{
+                ll.next = list2;
+                list2 = list2.next;
+            }
+            ll = ll.next;
+        }
+        if(list1!=null ) ll.next = list1;
+        else ll.next = list2;
+        return dummy.next;
+    }
+}
+
+
+// Time Complexity    = O(list1+list2) ~ O(n) where list1, list2 until empty.   
+// Space Complexity   = O(1)   to Intialise new ListNode
