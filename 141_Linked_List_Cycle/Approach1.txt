@@ -1,0 +1,36 @@
+//*********** Solution Thinking Idea ************
+// 1. We will use two pointer algorithm to detect cycle, slow and fast pointer.
+// 2. initially both point to the head of the given list.
+// 3. slow will move single step and fast will move 2 steps.
+// 4. traverse and consider fast and fast.next are not null and check slow and fast are equal or not.
+// 5. if equal cycle is there and if not no cycle detected.  
+
+
+/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
+public class Solution {
+    public boolean hasCycle(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+
+        while(fast != null && fast.next!= null){
+            slow = slow.next;
+            fast = fast.next.next;
+            if(slow == fast) return true;
+        }
+        return false;
+    }
+}
+
+
+// Time Complexity    = O(n) where n is the head length till null.   
+// Space Complexity   = O(1)   to Intialise pointers

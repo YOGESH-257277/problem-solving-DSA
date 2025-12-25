@@ -2,10 +2,10 @@
 // 1. Intialise new List having single node as -1 or any non null value. 
 // 2. Take a pointer which will point to that head of the newly created List.
 // 3. traverse both the list1 and list2 until null, compares their values with the each other node value
-    and increment the pointer to the next node,
-    3.1 point the dummy next pointer to that list and move list to the next node.
-    3.2 same for other case. 
-    3.3 move ll pointers as well after both conditions.
+//    and increment the pointer to the next node,
+//    3.1 point the dummy next pointer to that list and move list to the next node.
+//    3.2 same for other case. 
+//    3.3 move ll pointers as well after both conditions.
 // 4. if loop ends means one of the list remains, then point the ll point to the remaining of the non empty list.
 // 5. return dummy.next, which is next of the ListNode we taken initially.    
 
