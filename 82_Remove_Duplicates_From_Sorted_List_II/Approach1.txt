@@ -1,0 +1,47 @@
+//*********** Solution Thinking Idea ************
+// 1. Check Base cases. 
+// 2. Use a dummy node to point to the head of the list, where dummy points to the head of list.
+// 3. Use a pointer ll which will point to the head of the list.
+// 4. Use a pointer prev whill will point to the dummy.
+// 5. Traverse the list using the pointer ll.
+// 6. If the ll.val is equal to ll.next.val, then keep moving the ll pointer until the ll.val is not equal to ll.next.val.
+// 7
+
+
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        if(head == null) return head;
+        ListNode dummy = new ListNode(-1); 
+        dummy.next = head;  
+        ListNode ll = head;
+        ListNode prev = dummy;
+        while(ll != null && ll.next!= null){
+            if(ll.val == ll.next.val){
+                while(ll.next!= null && ll.val== ll.next.val){
+                    ll = ll.next;
+                }
+                prev.next = ll.next;
+            }
+            else{   
+                prev = prev.next;
+            }
+            ll = ll.next;
+        }
+        return dummy.next;
+    }
+}
+
+
+// Time Complexity = O(n), Traverse all list, n total size.
+// Space Complexity = O(1), Due to listNode space pointer.
