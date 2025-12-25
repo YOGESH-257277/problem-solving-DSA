@@ -1,0 +1,50 @@
+//*********** Solution Thinking Idea ************
+// 1. Check base case null check.
+// 2. Take a ListNode dummy with node (-1) initially. 
+// 3. Pointing of the Declared ListNode
+//      3.1 dummy.next points to the head.
+//      3.2 ll points to the head.
+//      3.3 prev points to dummy.
+// 4. Traverse the list using ll if we get the value matched same as the given val.
+//     4.1 prev.next points to ll.next;
+//     4.2 ll will be prev.next;
+// 5. Else not matched 
+//      5.1 move the both pointers. prev  = prev.next; and ll = ll.next;   
+// 6. return the dummy.next which is the modified list.
+
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode removeElements(ListNode head, int val) {
+        if (head == null) return null;
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+        ListNode ll = head;
+        ListNode prev = dummy;
+
+        while(ll != null){
+            if(ll.val == val){
+               prev.next = ll.next;
+               ll = prev.next; 
+            }
+            else{
+                prev = prev.next;;
+                ll = ll.next;
+            }
+        }
+        return dummy.next;
+    }
+}
+
+
+// Time Complexity = O(n), Traverse the list, n total length of the entire list.
+// Space Complexity = O(1), Due to listNode prev, dummy, ll pointers.
