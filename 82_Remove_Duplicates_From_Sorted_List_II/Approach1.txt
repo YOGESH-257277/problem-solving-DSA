@@ -43,5 +43,5 @@ class Solution {
 }
 
 
-// Time Complexity = O(n), Traverse all list, n total size.
-// Space Complexity = O(1), Due to listNode space pointer.
+// Time Complexity = O(n), Traverse all list, n total length of the entire list.
+// Space Complexity = O(1), Due to listNode space pointer, dummy, prev, ll.
