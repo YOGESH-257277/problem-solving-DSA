@@ -1,0 +1,27 @@
+//*********** Solution Thinking Idea ************
+// 1.
+
+
+class Solution {
+    public int[] rowAndMaximumOnes(int[][] mat) {
+        int idx = 0;
+        int max_cnt = 0;
+        for(int i = 0 ; i < mat.length ; i++){
+            int cnt = 0;
+            for(int j = 0 ; j < mat[i].length ; j++){
+                if(mat[i][j] == 1){
+                    cnt++;
+                }
+            }  
+            if(cnt > max_cnt){
+                idx = i;
+                max_cnt = cnt;
+            }
+        }
+        return new int[]{idx,max_cnt};
+    }
+}
+
+
+// Time Complexity    = O(m*n)  where m is the total length of single row and n is the number of 0 and 1 in that row.   
+// Space Complexity   = O(1) , Only used for variables.
