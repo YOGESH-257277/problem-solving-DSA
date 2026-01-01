@@ -1,0 +1,23 @@
+//*********** Solution Thinking Idea ************
+// 1.
+
+
+class Solution {
+    public int maxNumberOfBalloons(String text) {
+        HashMap<Character, Integer> mp = new HashMap<>();
+        for(int i = 0 ; i < text.length() ;i++){
+            char ch = text.charAt(i);
+            mp.put(ch, mp.getOrDefault(ch,0)+1);
+        }
+        int bcnt = mp.getOrDefault('b',0);
+        int acnt = mp.getOrDefault('a',0);
+        int lcnt = mp.getOrDefault('l',0)/2;
+        int ocnt = mp.getOrDefault('o',0)/2;
+        int ncnt = mp.getOrDefault('n',0);
+
+        return Math.min(Math.min(acnt,bcnt),Math.min(lcnt, Math.min(ocnt,ncnt)));
+    }
+}
+
+// Time Complexity    = O(n)  Single traversal over text string elements to count.  
+// Space Complexity   = O(n) , HashMap and variables.
