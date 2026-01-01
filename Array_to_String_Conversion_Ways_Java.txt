@@ -2,4 +2,25 @@
 /**** METHODS TO CONVERT THE ARRAY TO THE STRING IN JAVA FOR PROBLEM SOLVING*****/
 ************************************************************************************
 
+// Method 01
+String[] words = {"I", "love", "Java"};
+String result = String.join(" ", words);
+
+
+// Method 02        // USING STRING BUILDER 
+String[] words = {"I", "love", "Java"};
+
+StringBuilder sb = new StringBuilder();
+for (int i = 0; i < words.length; i++) {
+    sb.append(words[i]);
+    if (i < words.length - 1) {
+        sb.append(" ");
+    }
+}
+String result = sb.toString();
+
+
+// Method 03    //(USING STREAMS)
+String result = Arrays.stream(words)
+                      .collect(Collectors.joining(" "));
 

@@ -32,11 +32,12 @@ class Solution {
                     ll = ll.next;
                 }
                 prev.next = ll.next;
+                ll = ll.next;
             }
             else{   
                 prev = prev.next;
+                ll = ll.next;                
             }
-            ll = ll.next;
         }
         return dummy.next;
     }

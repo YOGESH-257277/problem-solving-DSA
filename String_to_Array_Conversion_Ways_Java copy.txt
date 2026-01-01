@@ -17,7 +17,7 @@ String s = "I love Java";
 String[] words = s.split("\\s+");
 
 ***************************************************************************************
-// Method 04    //(MANUAL)
+// Method 04    //(MANUAL)    //CHARACTER STRING TO ARRAY
 String s = "hello";
 char[] arr = new char[s.length()];
 
@@ -26,16 +26,16 @@ for (int i = 0; i < s.length(); i++) {
 }
 
 ***************************************************************************************
-//METHOD 05 
+//METHOD 05                  //NUMBER STRING TO ARRAY
 String s = "1234";
 int[] arr = new int[s.length()];
 
 for (int i = 0; i < s.length(); i++) {
     arr[i] = s.charAt(i) - '0';
-}
+}   
 
 ***************************************************************************************
-//METHOD 06
+//METHOD 06                         // USING ARRAYLIST for CHARACTER LIST
 List<Character> list = new ArrayList<>();
 for (char c : s.toCharArray()) {
     list.add(c);
