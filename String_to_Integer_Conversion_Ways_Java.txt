@@ -5,6 +5,7 @@
 // Method 01
 String s = "1234";
 int x = Integer.parseInt(s);
+int x = Integer.parseInt(new String(s));
 
 // Method 02
 String s = "1234";
