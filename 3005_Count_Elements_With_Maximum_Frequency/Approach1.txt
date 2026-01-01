@@ -1,0 +1,25 @@
+//*********** Solution Thinking Idea ************
+// 1.
+
+
+class Solution {
+    public int maxFrequencyElements(int[] nums) {
+        HashMap<Integer,Integer> mp = new HashMap<>();
+        int maxFreq = 0 ;
+        int cnt = 0 ;
+        for(int num : nums){
+            mp.put(num, mp.getOrDefault(num,0)+1);
+            maxFreq = Math.max(maxFreq, mp.getOrDefault(num,0));
+        }
+        for(Map.Entry<Integer,Integer> entry : mp.entrySet()){
+            if(maxFreq == entry.getValue()){
+                cnt += maxFreq;
+            }
+        }
+        return cnt;
+    }
+}
+
+
+// Time Complexity    = O(n)  where n is the nums length.   
+// Space Complexity   = O(n) HashMap
