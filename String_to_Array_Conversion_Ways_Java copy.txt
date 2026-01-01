@@ -1,0 +1,42 @@
+************************************************************************************
+/**** METHODS TO CONVERT THE STRING TO THE ARRAY IN JAVA FOR PROBLEM SOLVING*****/
+************************************************************************************
+
+// Method 01
+String s = "hello";
+char[] arr = s.toCharArray();
+
+***************************************************************************************
+// Method 02  (STRING WITH COMMAS)
+String s = "a,b,c";
+String[] arr = s.split(",");
+
+***************************************************************************************
+//Method 03    (STRING WITH SPACING BETWEEN WORDS )
+String s = "I love Java";
+String[] words = s.split("\\s+");
+
+***************************************************************************************
+// Method 04    //(MANUAL)
+String s = "hello";
+char[] arr = new char[s.length()];
+
+for (int i = 0; i < s.length(); i++) {
+    arr[i] = s.charAt(i);
+}
+
+***************************************************************************************
+//METHOD 05 
+String s = "1234";
+int[] arr = new int[s.length()];
+
+for (int i = 0; i < s.length(); i++) {
+    arr[i] = s.charAt(i) - '0';
+}
+
+***************************************************************************************
+//METHOD 06
+List<Character> list = new ArrayList<>();
+for (char c : s.toCharArray()) {
+    list.add(c);
+}
