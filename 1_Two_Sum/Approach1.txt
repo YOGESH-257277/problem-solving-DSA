@@ -1,0 +1,36 @@
+//*********** Solution Thinking Idea ************
+// 1. Take a empty stack and check the base case as the given stack is empty or not.
+// 2. Iterate the given string from left to right.
+// 3. If the character is opening bracket in any form, push the reverse of the same bracket 
+    into the stack.
+// 4. If the character is closing bracket in any form, pop the top element from the stack and
+    compare with the character in the traverse loop. if yes, check for the next character.
+// 5. Check till the stack is empty.
+// 6. If the stack is empty at the end of the loop, return true else return false.
+
+class Solution {
+    public boolean isValid(String s) {
+        Stack<Character> st = new Stack<>();
+        if(s.isEmpty())  return false;
+
+        for(int i = 0 ; i < s.length() ; i++){
+            char ch = s.charAt(i);
+
+            if(ch == '(') st.push(')');
+            else if(ch == '{') st.push('}');
+            else if(ch == '[') st.push(']');
+            else{
+                if(st.isEmpty()) return false;
+                else{
+                    char remove = st.pop();
+                    if(remove != ch) return false;
+                }
+            }
+        }
+        return st.isEmpty();
+    }
+}
+
+
+// Time Complexity    = O(n), where n is the length of the given string   
+// Space Complexity   = O(n), worst case scenario
