@@ -6,7 +6,7 @@
 String[] words = {"I", "love", "Java"};
 String result = String.join(" ", words);
 
-
+************************************************************************************
 // Method 02        // USING STRING BUILDER 
 String[] words = {"I", "love", "Java"};
 
@@ -19,8 +19,9 @@ for (int i = 0; i < words.length; i++) {
 }
 String result = sb.toString();
 
-
+************************************************************************************
 // Method 03    //(USING STREAMS)
 String result = Arrays.stream(words)
                       .collect(Collectors.joining(" "));
 
+************************************************************************************
