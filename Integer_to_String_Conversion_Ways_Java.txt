@@ -6,13 +6,17 @@
 int x = 1234
 String str = String.valueOf(x);
 
+************************************************************************************
 // Method 02
 int x = 1234
 String str = Integer.toString(x);
 
+************************************************************************************
 // Method 03    //(LEAST USED AND NOT RECOMMENDED)
 int x = 1234
 String str = Integer.toString(x, 10); 
 String str = Integer.toString(x, 2);  // binary
 String str = Integer.toString(x, 8);  // octal
 String str = Integer.toString(x, 16); // hex
+
+************************************************************************************
