@@ -7,21 +7,25 @@ String s = "1234";
 int x = Integer.parseInt(s);
 int x = Integer.parseInt(new String(s));
 
+************************************************************************************
 // Method 02
 String s = "1234";
 int x = Integer.valueOf(s);
 
-
+************************************************************************************
 // Method 03    //(LEAST USED AND NOT RECOMMENDED)
 String s = "1010";
 int x = Integer.parseInt(s, 2); // binary → decimal
 int x = Integer.parseInt("12", 8);   // octal → 10
 int x = Integer.parseInt("A", 16);   // hex → 10
 
+************************************************************************************
 //Method 04  // MANUAL CONVERSION IMP** 
 String s = "1234";
 int num = 0;
 for (int i = 0; i < s.length(); i++) {
     num = num * 10 + (s.charAt(i) - '0');
 }
+
+************************************************************************************
 
