@@ -16,6 +16,5 @@ class Solution {
     }
 }
 
-
 // Time Complexity    = O(n), where n is the length of the given array   
 // Space Complexity   = O(1), Pointer
