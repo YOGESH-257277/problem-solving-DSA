@@ -1,0 +1,27 @@
+//*********** Solution Thinking Idea ************ (LESS RECOMMENDED)
+// 1.
+
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        int ans = 0;
+        boolean flag = false;
+        for(int i = 0 ; i < nums.length ; i++){
+            if(nums[i]== target){
+               ans = i;
+               flag = true;
+               break;
+            }
+            else if(nums[i] > target){
+                ans = i;
+                flag = true;
+                break;
+            }
+        }
+        if(flag==true) return ans; 
+        else return nums.length;
+    }
+}
+
+
+// Time Complexity    = O(n), where n is the length of the given array.   
+// Space Complexity   = O(1), for pointer or flag.
