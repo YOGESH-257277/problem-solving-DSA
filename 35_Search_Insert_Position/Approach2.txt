@@ -1,5 +1,5 @@
 //*********** Solution Thinking Idea ************ (OPTIMISED APPROACH)
-// 1. Used Binary Search Approach
+// 1. Used Binary Search Approach for optimisation
 
 class Solution {
     public int searchInsert(int[] nums, int target) {
