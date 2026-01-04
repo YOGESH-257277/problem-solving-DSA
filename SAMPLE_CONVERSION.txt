@@ -3,11 +3,18 @@
 ************************************************************************************
 
         // Need final output as number. either negative or positive.
+        // Integer Declaration
         int res = 0;
 
+        // Declaring boolean value to detect negative number 
+        // As x<0 gives false which sets the starting value of isNegative
         boolean isNegative = x < 0;
 
-        String strX = String.valueOf(Math.abs(x));
+        // Converting the negative value using absolute function
+        // positive number = Math.abs(x);
+        // Converting the number to string and storing in str
+        String str = String.valueOf(Math.abs(x));
+        
         StringBuilder sb = new StringBuilder(strX).reverse();
         
         try {
