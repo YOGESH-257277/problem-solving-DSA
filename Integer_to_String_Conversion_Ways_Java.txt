@@ -5,6 +5,7 @@
 // Method 01
 int x = 1234
 String str = String.valueOf(x);
+String str = String.valueOf(Math.abs(x));  // incase of negative value of x
 
 ************************************************************************************
 // Method 02
