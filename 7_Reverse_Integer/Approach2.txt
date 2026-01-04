@@ -1,0 +1,19 @@
+//*********** Solution Thinking Idea ************ (OPTIMISED APPROACH)
+// 1. Using StringBuilder and Strings. 
+
+class Solution {
+    public int reverse(int x) { 
+        boolean isNeg = x < 0;
+        long num = Math.abs((long) x); 
+
+        String str = String.valueOf(num);
+        String reversed = new StringBuilder(str).reverse().toString();
+        long rev = Long.parseLong(reversed); 
+        
+        if (rev > Integer.MAX_VALUE || rev < Integer.MIN_VALUE) return 0;
+        return isNeg ? (int) -rev : (int) rev;
+    }
+}
+
+// Time Complexity    = O(d), where d is the digits in x.   
+// Space Complexity   = O(d), String creation and everything.
