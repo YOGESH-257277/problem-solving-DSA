@@ -1,0 +1,26 @@
+//*********** Solution Thinking Idea ************ (OPTIMISED APPROACH)
+// 1. Using HASHMAP 
+
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int r = 0 ; 
+        int n = s.length();
+        int l = 0 ;
+        int maxlen = 0;
+
+        HashMap<Character,Integer> mp = new HashMap<>();
+
+        for(r = 0 ; r < n ; r++){
+            char ch = s.charAt(r);
+            if(mp.containsKey(ch)){
+                l = Math.max(l,mp.get(ch)+1);
+            }
+            mp.put(ch,r);
+            maxlen = Math.max(maxlen, r-l +1);
+        }
+        return maxlen;
+    }
+}
+
+// Time Complexity    = O(n), where n is the length of the string.   
+// Space Complexity   = O(n), HashSet and for pointer and variables.
