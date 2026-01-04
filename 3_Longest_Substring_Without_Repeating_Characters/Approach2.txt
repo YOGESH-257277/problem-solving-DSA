@@ -23,4 +23,4 @@ class Solution {
 }
 
 // Time Complexity    = O(n), where n is the length of the string.   
-// Space Complexity   = O(n), HashSet and for pointer and variables.
+// Space Complexity   = O(n), HashMap and for pointer and variables.
