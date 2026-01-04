@@ -15,14 +15,15 @@
         // Converting the number to string and storing in str
         String str = String.valueOf(Math.abs(x));
         
-        StringBuilder sb = new StringBuilder(strX).reverse();
+        // Reversing the string using StringBuilder method 
+        // reverse the str string using reverse() method
+        StringBuilder sb = new StringBuilder(str).reverse();
         
-        try {
-            res = Integer.parseInt(sb.toString());
-        } catch (NumberFormatException e) {
-            return 0;
-        }
+        // Using String to Integer conversion to convert the reversed string to integer.
+        // Using toString() method to convert the StringBuilder to String
+        res = Integer.parseInt(sb.toString());
         
+        //Return the boolean output based on the function return type
         return isNegative ? -res : res;       
 
 ************************************************************************************
