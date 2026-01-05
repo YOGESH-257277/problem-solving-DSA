@@ -1,5 +1,5 @@
 //*********** Solution Thinking Idea ************
-// 1. 
+// 1. Check element != empty space the increment count.
 
 class Solution {
     public int lengthOfLastWord(String s) {
