@@ -1,6 +1,7 @@
 //*********** Solution Thinking Idea ************
 // 1. Check element != empty space the increment count.
 // 2. Check cnt > 0 means we have already found the elements. break it.
+// 3. If cnt is zero continue until we found some non empty thing like char.
 
 class Solution {
     public int lengthOfLastWord(String s) {
