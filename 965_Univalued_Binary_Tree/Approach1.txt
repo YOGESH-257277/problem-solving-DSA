@@ -1,5 +1,5 @@
 //*********** Solution Thinking Idea ************
-// 1. 
+// 1. Check the Base case in case of tree.
 
 /**
  * Definition for a binary tree node.
