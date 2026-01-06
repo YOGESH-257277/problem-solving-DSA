@@ -34,5 +34,5 @@ class Solution {
     }
 }
 
-// Time Complexity    = O(n), where n is the length of the given tree nodes.   
-// Space Complexity   = O(n), for Storing nodes.
+// Time Complexity  = O(n), where n is the length of the given tree nodes.   
+// Space Complexity = O(n), for Storing nodes.
