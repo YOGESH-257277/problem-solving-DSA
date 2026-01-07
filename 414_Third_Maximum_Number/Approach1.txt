@@ -1,7 +1,6 @@
 //*********** Solution Thinking Idea ************
 // 1. 
 
-
 class Solution {
         public int thirdMax(int[] nums) {
             long first= Long.MIN_VALUE ; 
@@ -23,7 +22,6 @@ class Solution {
             return third == Long.MIN_VALUE ? (int) first : (int) third;
         }
 }
-
 
 // Time Complexity    = O(n)  Entire traversal  
 // Space Complexity   = O(1), for first, second and third.
