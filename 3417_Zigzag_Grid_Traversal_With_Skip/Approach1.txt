@@ -26,4 +26,4 @@ class Solution {
 }
 
 // Time Complexity    = O(n*n)  where n is the grid length.   
-// Space Complexity   = O(n) ArrayList to store.
+// Space Complexity   = O(n)    ArrayList to store.
