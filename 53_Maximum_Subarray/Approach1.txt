@@ -1,0 +1,23 @@
+//*********** Solution Thinking Idea ************
+// 1. 
+
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int n = nums.length;
+        int curr_sum = nums[0]; int max_sum = nums[0];
+
+        for(int i = 1 ; i < n ; i++){
+            if(nums[i] > nums[i]+curr_sum){
+                curr_sum = nums[i];
+            }
+            else{
+                curr_sum += nums[i];
+            }
+            if(curr_sum > max_sum) max_sum = curr_sum; 
+        }
+        return max_sum;
+    }
+}
+
+// Time Complexity    = O(n), where n is the length of the given array   
+// Space Complexity   = O(1), variables.
