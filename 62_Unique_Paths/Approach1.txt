@@ -1,5 +1,7 @@
 //*********** Solution Thinking Idea ************
-// 1. Using DP
+// 1. Using 2D DP
+// 2. Single DP Space Optimised
+// 3. Permutation and Combination Formula
 
 class Solution {
     public int uniquePaths(int m, int n) {
