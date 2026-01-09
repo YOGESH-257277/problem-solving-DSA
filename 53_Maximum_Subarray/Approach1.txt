@@ -19,6 +19,6 @@ class Solution {
     }
 }
 
-// NOTE: We can also use Max function  
+// NOTE: We can also use Math.max function 
 // Time Complexity    = O(n), where n is the length of the given array   
 // Space Complexity   = O(1), variables
