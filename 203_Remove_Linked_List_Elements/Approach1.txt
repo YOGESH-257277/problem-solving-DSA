@@ -12,7 +12,6 @@
 //      5.1 move the both pointers. prev  = prev.next; and ll = ll.next;   
 // 6. return the dummy.next which is the modified list.
 
-
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -44,7 +43,6 @@ class Solution {
         return dummy.next;
     }
 }
-
 
 // Time Complexity = O(n), Traverse the list, n total length of the entire list.
 // Space Complexity = O(1), Due to listNode prev, dummy, ll pointers.
