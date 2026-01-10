@@ -1,6 +1,6 @@
 //*********** Solution Thinking Idea ************
 // 1. Using Dynamic Programming
-// 2. No Logical Thinking 
+// 2. No Logical Thinking just observing patters
 // 3. Subproblems for the major problems
 
 class Solution {
