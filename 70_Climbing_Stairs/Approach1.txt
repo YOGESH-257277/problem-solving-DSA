@@ -1,7 +1,6 @@
 //*********** Solution Thinking Idea ************
 // 1. Observing pattern.
 
-
 class Solution {
     public int climbStairs(int n) {
         if(n<=2) return n;
