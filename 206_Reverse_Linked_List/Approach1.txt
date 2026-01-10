@@ -1,0 +1,29 @@
+//*********** Solution Thinking Idea ************
+// Linked List
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        ListNode ll = null;
+
+        while(head!= null){
+            ListNode tmp = head.next;
+            head.next = ll;
+            ll = head;
+            head = tmp;
+        }
+        return ll;
+    }
+}
+
+// Time Complexity = O(n), Traverse the list, n total length of the entire list.
+// Space Complexity = O(1), Due to listNode ll pointer.
