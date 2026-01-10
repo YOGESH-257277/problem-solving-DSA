@@ -1,7 +1,5 @@
 //*********** Solution Thinking Idea ************
-// 1. Using Dynamic Programming
-// 2. No Logical Thinking
-// 3. Subproblems for the major problems
+// 1. Observing pattern.
 
 class Solution {
     public int climbStairs(int n) {
