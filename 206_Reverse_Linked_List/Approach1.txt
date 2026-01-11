@@ -1,5 +1,5 @@
 //*********** Solution Thinking Idea ************
-// Linked List
+// Reverse a Linked List
 
 /**
  * Definition for singly-linked list.
