@@ -1,2 +1,2 @@
 # Problem-Solving-DSA
-Verified Leetcode solutions  
+Verified Leetcode solutions Multiple Approaches
