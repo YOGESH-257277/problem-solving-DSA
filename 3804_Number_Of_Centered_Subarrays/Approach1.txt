@@ -19,5 +19,5 @@ class Solution {
     }
 }
 
-// Time Complexity    = O(n*n)  where n is the given array lengt.   
+// Time Complexity    = O(n*n)  where n is the given array length.
 // Space Complexity   = O(n)    For HashSet.
