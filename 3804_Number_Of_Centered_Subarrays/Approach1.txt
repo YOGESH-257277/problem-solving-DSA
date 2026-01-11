@@ -1,0 +1,23 @@
+//*********** Solution Thinking Idea ************
+// 1.  Brute Force approach
+
+class Solution {
+    public int centeredSubarrays(int[] nums) {
+        int n = nums.length;
+        int cnt = 0;
+        for(int i = 0 ; i < n ; i ++){
+            Set<Integer> sett = new HashSet<>();
+            int sum = 0;
+            for(int j = i ; j <n ; j++){
+                sett.add(nums[j]);
+                sum += nums[j];
+                if(sett.contains(sum)) cnt++;
+            }
+            
+        }
+        return cnt;
+    }
+}
+
+// Time Complexity    = O(n*n)  where n is the given array lengt.   
+// Space Complexity   = O(n)    For HashSet.
