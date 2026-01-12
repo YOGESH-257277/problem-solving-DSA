@@ -1,5 +1,5 @@
 //*********** Solution Thinking Idea ************
-// MAX Min Functions
+// Using MAX Min Functions
 
 class Solution {
     public int maxProfit(int[] prices) {
