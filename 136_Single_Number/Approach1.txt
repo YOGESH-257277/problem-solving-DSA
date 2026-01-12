@@ -1,5 +1,5 @@
 //*********** Solution Thinking Idea ************
-// 1.
+// 1. Using Mathematical property (Num ^ Num = 0 ). (IMP)
 
 class Solution {
     public int singleNumber(int[] nums) {
