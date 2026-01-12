@@ -1,0 +1,30 @@
+//*********** Solution Thinking Idea ************
+// 1. Using Multiple HashMap
+// 2. For Each string if Character appears first time then put it in HashMap with index
+//    and if it again appears dont add in the HashMap
+// 3. Compare both index of the HashMap if they are same then return true else false
+
+class Solution {
+    public boolean isIsomorphic(String s, String t) {
+        HashMap<Character,Integer> mp1 = new HashMap<>();
+        HashMap<Character,Integer> mp2 = new HashMap<>();
+        if(s.length() != t.length()) return false;
+
+        for(int i = 0 ; i < s.length() ; i++){
+            
+            if(!mp1.containsKey(s.charAt(i))){
+                mp1.put(s.charAt(i),i);
+            }
+            if(!mp2.containsKey(t.charAt(i))){
+                mp2.put(t.charAt(i),i);
+            }   
+            if(!mp1.get(s.charAt(i)).equals(mp2.get(t.charAt(i)))){
+                return false;
+            }                     
+        }
+        return true;
+    }
+}
+
+// Time Complexity    = O(n) where n is the length of the array.   
+// Space Complexity   = O(n)  For HashMap
