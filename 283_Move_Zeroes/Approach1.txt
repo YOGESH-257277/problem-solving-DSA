@@ -1,0 +1,20 @@
+//*********** Solution Thinking Idea ************
+// 1. Using Two pointer approach.
+
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int j = 0; 
+
+        for(int i = 0 ; i < nums.length ; i ++){
+            if(nums[i]!= 0){
+                int tmp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = tmp;
+                j++;
+            }
+        }
+    }
+}
+
+// Time Complexity    = O(n) , n is the length of the given array.
+// Space Complexity   = O(1) variables  
