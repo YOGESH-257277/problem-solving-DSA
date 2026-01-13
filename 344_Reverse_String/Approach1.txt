@@ -1,0 +1,21 @@
+//*********** Solution Thinking Idea ************
+// 1. Using Binary Search
+//*********** Solution Thinking Idea ************
+
+/* The isBadVersion API is defined in the parent class VersionControl. */
+/*      boolean isBadVersion(int version); */
+
+class Solution {
+    public void reverseString(char[] s) {
+        int k = s.length - 1;
+        for(int i = 0 ; i < s.length/2 ; i ++){
+            char tmp = s[i];
+            s[i] = s[k];
+            s[k] = tmp;  
+            k--;  
+        }
+    }
+}
+
+// Time Complexity    = O(n) , n is the count of array(s) of characters.
+// Space Complexity   = O(1) variables  
