@@ -1,6 +1,5 @@
 //*********** Solution Thinking Idea ************
 // 1. Using Binary Search
-//*********** Solution Thinking Idea ************
 
 class Solution {
     public void reverseString(char[] s) {
