@@ -1,7 +1,6 @@
 //*********** Solution Thinking Idea ************
 // 1. Using Mathematical
 
-
 class Solution {
     public int furthestDistanceFromOrigin(String moves) {
         int cnt = 0 ;
