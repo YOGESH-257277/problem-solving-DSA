@@ -22,5 +22,5 @@ class Solution {
 }
 
 
-// Time Complexity    = O(m*n),  where m is the total length of single row and n is the number of 0 and 1 in that row.   
+// Time Complexity    = O(n),  where n is the total length of string moves.   
 // Space Complexity   = O(1) , Only used for variables.
