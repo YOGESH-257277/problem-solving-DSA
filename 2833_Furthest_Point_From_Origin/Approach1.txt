@@ -1,5 +1,6 @@
 //*********** Solution Thinking Idea ************
 // 1. Using Mathematical
+// 2. Using String to Array Conversion
 
 class Solution {
     public int furthestDistanceFromOrigin(String moves) {
