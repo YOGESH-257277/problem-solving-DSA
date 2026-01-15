@@ -1,5 +1,5 @@
 //*********** Solution Thinking Idea ************
-// 1.  Understanding approach
+// 1.  Understanding approach 
 
 class Solution {
     public int residuePrefixes(String s) {
