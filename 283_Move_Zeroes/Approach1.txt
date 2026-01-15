@@ -17,5 +17,5 @@ class Solution {
     }
 }
 
-// Time Complexity    = O(n) , n is the length of the given array.
+// Time Complexity    = O(n) ,n is the length of the given array.
 // Space Complexity   = O(1) variables  
