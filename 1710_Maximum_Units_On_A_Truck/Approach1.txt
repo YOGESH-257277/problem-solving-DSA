@@ -1,0 +1,23 @@
+//*********** Solution Thinking Idea ************
+// 1.  Brute Force approach to get the zigzagTraversal
+
+class Solution {
+    public int maximumUnits(int[][] boxTypes, int truckSize) {
+      Arrays.sort(boxTypes, (a, b) -> Integer.compare(b[1], a[1]));
+      int cnt = 0;
+      for(int[] box : boxTypes){
+        int boxes = box[0];
+        int units = box[1];
+        if(truckSize == 0) break;
+
+        int taken = Math.min(truckSize, boxes);
+        cnt += taken*units;
+        truckSize -= taken;
+
+      }
+      return cnt;
+    }
+}
+
+// Time Complexity    = O(nlogn)  where n is the total length.   
+// Space Complexity   = O(1)    variables.
