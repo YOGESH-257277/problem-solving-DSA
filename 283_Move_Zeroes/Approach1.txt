@@ -1,6 +1,6 @@
-//*********** Solution Thinking Idea ************
+//*********** Solution Thinking Idea ***********
 // 1. Using Two pointer approach.
-//***********************************************
+//**********************************************
 
 class Solution {
     public void moveZeroes(int[] nums) {
