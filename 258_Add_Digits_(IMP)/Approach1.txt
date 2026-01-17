@@ -1,4 +1,4 @@
-//*********** Solution Thinking Idea ************
+//************ Solution Thinking Idea **************
 // Reverse and Remember the Mathematical Expression
 
 class Solution {
@@ -10,4 +10,4 @@ class Solution {
 }
 
 // Time Complexity = O(1), For number
-// Space Complexity = O(1)
+// Space Complexity = O(1) No extra space needed.
