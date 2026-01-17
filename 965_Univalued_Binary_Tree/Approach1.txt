@@ -1,4 +1,4 @@
-//*********** Solution Thinking Idea ************
+//***************** Solution Thinking Idea ******************
 // 1. Check the Base case in case of tree.
 // 2. Check the root value with left and right value. if not equal return false.
 // 3. Check the left and right subtree recursively.
