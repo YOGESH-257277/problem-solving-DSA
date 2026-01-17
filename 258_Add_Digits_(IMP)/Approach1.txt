@@ -1,5 +1,5 @@
 //*********** Solution Thinking Idea ************
-// Reverse 
+// Reverse and Remember the Mathematical Expression
 
 class Solution {
     public int addDigits(int num) {
