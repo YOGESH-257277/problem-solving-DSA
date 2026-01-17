@@ -1,5 +1,5 @@
 ************************************************************************************
-/**** METHODS TO CONVERT THE ARRAY TO THE STRING IN JAVA FOR PROBLEM SOLVING*****/
+/***** METHODS TO CONVERT THE ARRAY TO THE STRING IN JAVA FOR PROBLEM SOLVING******/
 ************************************************************************************
 
 // Method 01
