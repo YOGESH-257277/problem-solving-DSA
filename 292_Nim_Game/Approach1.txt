@@ -1,5 +1,6 @@
 //*********** Solution Thinking Idea ************
-// 1. Using Loop Mathematical
+// 1. Using Mathematical Approach.
+// 2. Observe pattern in the variable n. 
 
 class Solution {
     public boolean canWinNim(int n) {
