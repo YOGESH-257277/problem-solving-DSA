@@ -1,0 +1,12 @@
+//*********** Solution Thinking Idea ************
+// 1. Using Loop Mathematical
+
+class Solution {
+    public boolean canWinNim(int n) {
+        if(n%4==0) return false;
+        else return true;
+    }
+}
+
+// Time Complexity    = O(1) , 
+// Space Complexity   = O(1) ,   
