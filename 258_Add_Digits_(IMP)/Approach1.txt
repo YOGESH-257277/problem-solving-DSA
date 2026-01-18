@@ -1,5 +1,5 @@
-//*********** Solution Thinking Idea ************
-// Reverse 
+//************ Solution Thinking Idea **************
+// Reverse and Remember the Mathematical Expression
 
 class Solution {
     public int addDigits(int num) {
@@ -10,4 +10,4 @@ class Solution {
 }
 
 // Time Complexity = O(1), For number
-// Space Complexity = O(1)
+// Space Complexity = O(1) No extra space needed.
