@@ -1,4 +1,4 @@
-//*********** Solution Thinking Idea ************
+//*************************** Solution Thinking Idea *****************************
 // 1. Check base case null check.
 // 2. Take a ListNode dummy with node (-1) initially. 
 // 3. Pointing of the Declared ListNode
