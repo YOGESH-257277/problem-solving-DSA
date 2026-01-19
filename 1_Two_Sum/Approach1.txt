@@ -1,4 +1,4 @@
-//*********** Solution Thinking Idea ************
+//****************************** Solution Thinking Idea *********************************
 // 1. Take a empty stack and check the base case as the given stack is empty or not.
 // 2. Iterate the given string from left to right.
 // 3. If the character is opening bracket in any form, push the reverse of the same bracket 
