@@ -1,4 +1,4 @@
-//*********** Solution Thinking Idea ************
+//******************* Solution Thinking Idea *******************
 // Using MAX Min Functions
 
 class Solution {
