@@ -1,6 +1,7 @@
 //******************* Solution Thinking Idea *******************
 // Using MAX Min Functions
 //**************************************************************
+
 class Solution {
     public int maxProfit(int[] prices) {
         int min = prices[0]; int max_profit = 0 ;
