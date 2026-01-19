@@ -1,5 +1,6 @@
-//*********** Solution Thinking Idea ************
+//************************* Solution Thinking Idea ******************************
 //  Traverse the array and store in HashSet, return true if exists in the HashSet
+//*******************************************************************************
 
 class Solution {
     public boolean containsDuplicate(int[] nums) {
