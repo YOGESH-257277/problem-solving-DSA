@@ -13,5 +13,6 @@ class Solution {
 }
 
 // USING (Num ^ Num = 0 ) Mathematical property.
+
 // Time Complexity    = O(n) where n is the length of the array.   
 // Space Complexity   = O(1)  To initialise variables.
