@@ -1,4 +1,4 @@
-//*********** Solution Thinking Idea ************
+//************** Solution Thinking Idea *****************
 // 1. Using Mathematical property (Num ^ Num = 0 ). (IMP)
 
 class Solution {
