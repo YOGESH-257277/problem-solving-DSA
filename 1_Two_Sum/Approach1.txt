@@ -6,7 +6,7 @@
 // 4. If the character is closing bracket in any form, pop the top element from the stack and
       compare with the character in the traverse loop. if yes, check for the next character.
 // 5. Check till the stack is empty.
-// 6. If the stack is empty at the end of the loop, return true else return false
+// 6. If the stack is empty at the end of the loop, return true else return false.
 
 class Solution {
     public boolean isValid(String s) {
