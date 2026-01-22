@@ -1,4 +1,4 @@
-//*********** Solution Thinking Idea ************
+//*************** Solution Thinking Idea *******************
 // 1. Use HashMap and count
 ************************************************************
 class Solution {
