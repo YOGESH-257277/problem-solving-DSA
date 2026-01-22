@@ -1,5 +1,5 @@
 //*************** Solution Thinking Idea *********************
-// 1. Use HashMap and count
+// 1. Use HashMap and count..
 **************************************************************
 
 class Solution {
