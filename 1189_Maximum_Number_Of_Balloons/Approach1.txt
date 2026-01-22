@@ -1,7 +1,6 @@
 //*********** Solution Thinking Idea ************
 // 1. Use HashMap
 
-
 class Solution {
     public int maxNumberOfBalloons(String text) {
         HashMap<Character, Integer> mp = new HashMap<>();
