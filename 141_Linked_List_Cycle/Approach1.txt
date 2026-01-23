@@ -4,7 +4,7 @@
 // 3. slow will move single step and fast will move 2 steps.
 // 4. traverse and consider fast and fast.next are not null and check slow and fast are equal or not.
 // 5. if equal cycle is there and if not no cycle detected.  
-*****************************************************************************************
+****************************************************************************************
 
 /**
  * Definition for singly-linked list.
