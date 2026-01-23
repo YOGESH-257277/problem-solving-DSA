@@ -1,4 +1,4 @@
-//*********** Solution Thinking Idea ************
+//******************************* Solution Thinking Idea ********************************
 // 1. We will use two pointer algorithm to detect cycle, slow and fast pointer.
 // 2. initially both point to the head of the given list.
 // 3. slow will move single step and fast will move 2 steps.
