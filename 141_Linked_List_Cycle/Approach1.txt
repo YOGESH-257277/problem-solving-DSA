@@ -31,5 +31,5 @@ public class Solution {
     }
 }
 
-// Time Complexity    = O(n) where n is the head length till null.   
+// Time Complexity    = O(n), where n is the head length till null.   
 // Space Complexity   = O(1)   to Intialise pointers
