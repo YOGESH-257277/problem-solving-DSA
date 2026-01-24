@@ -1,6 +1,6 @@
 //******************* Solution Thinking Idea ********************
 // 1. Using HashMap
-
+******************************************************************
 class Solution {
     public int majorityElement(int[] nums) {
         HashMap<Integer,Integer> mp = new HashMap<>();
